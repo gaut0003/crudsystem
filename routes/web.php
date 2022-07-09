@@ -20,9 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('products/500', function () {
-    return view('errors.500');
-});
+// Route::get('products/500', function () {
+//     return view('errors.500');
+// });
 
 Auth::routes();
 
