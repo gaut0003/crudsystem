@@ -9,7 +9,7 @@
 
             <div class="pull-left">
 
-                <h2>Laravel 9 CRUD Example from scratch </h2>
+                <h2>CRUD - FWD </h2>
 
             </div>
 
@@ -23,7 +23,7 @@
 
     </div>
 
-   
+
 
     @if ($message = Session::get('success'))
 
@@ -35,7 +35,7 @@
 
     @endif
 
-   
+
 
     <table class="table table-bordered">
 
@@ -65,21 +65,21 @@
 
                 <form action="{{ route('products.destroy',$product->id) }}" method="POST">
 
-   
+
 
                     <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
 
-    
+
 
                     <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
 
-   
+
 
                     @csrf
 
                     @method('DELETE')
 
-      
+
 
                     <button type="submit" class="btn btn-danger">Delete</button>
 
@@ -93,6 +93,6 @@
 
     </table>
 
-    
+
 
 @endsection
